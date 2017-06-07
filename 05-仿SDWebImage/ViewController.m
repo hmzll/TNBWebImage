@@ -75,7 +75,7 @@
         //取消上一条操作 调用operation对象的cancel方法,不会取消操作,它只是把任务的isCancelled属性改为YES而已
         //所以,如果需要取消,我们还必须在op对象的内部根据isCancelled来做一些处理
         [_opCaches[_lastUrl] cancel];
-        
+        //测试
         //如果取消了就没必要再留在缓存池里了
         [_opCaches removeObjectForKey:_lastUrl];
     }
